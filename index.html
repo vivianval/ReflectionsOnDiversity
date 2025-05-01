@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reflections on Diversity (MOD)</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -25,12 +26,6 @@
       font-weight: bold;
       line-height: 1.4;
       margin-bottom: 0.2em;
-    }
-    h2 {
-      font-size: 1.6em;
-      font-weight: bold;
-      margin-top: 60px;
-      text-align: center;
     }
     .conference {
       font-size: 1.2em;
@@ -65,15 +60,27 @@
       border-radius: 30px;
       font-weight: bold;
       font-size: 0.95em;
+      transition: background-color 0.3s ease;
+    }
+    .buttons a:hover {
+      background-color: #555;
     }
     .buttons a i {
       margin-right: 8px;
     }
     .section {
-      text-align: justify;
-      max-width: 850px;
-      margin: 40px auto 0 auto;
+      text-align: center;
+      margin-top: 60px;
       line-height: 1.6;
+    }
+    .section h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .section p {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      text-align: justify;
     }
     iframe {
       width: 100%;
@@ -97,17 +104,6 @@
       font-style: italic;
       color: #555;
     }
-    pre {
-      background-color: #fff0f5;
-      color: #000;
-      text-align: left;
-      padding: 1em;
-      margin: 40px auto;
-      max-width: 850px;
-      border-left: 4px solid #e91e63;
-      overflow-x: auto;
-      font-size: 0.9em;
-    }
   </style>
 </head>
 <body>
@@ -116,7 +112,7 @@
     <div class="conference">IEEE EEITE 2025</div>
 
     <div class="authors">
-      <a href="https://www.linkedin.com/in/vivi-valergaki-631b8b293/?originalSubdomain=gr" target="_blank">Paraskevi Valergaki<sup>1,2</sup></a>,
+      <a href="https://www.linkedin.com/in/vivi-valergaki-631b8b293/" target="_blank">Paraskevi Valergaki<sup>1,2</sup></a>,
       <a href="https://users.ics.forth.gr/~argyros/" target="_blank">Antonis Argyros<sup>1,2</sup></a>,
       <a href="https://users.ics.forth.gr/~ggian/" target="_blank">Giorgos Giannakakis<sup>2,3*</sup></a>,
       <a href="https://users.ics.forth.gr/~troussos/" target="_blank">Anastasios Roussos<sup>2*</sup></a>
@@ -135,8 +131,8 @@
       <a href="https://www.youtube.com/watch?v=w2w6hz5Nf_I&t=1s" target="_blank"><i class="fab fa-youtube"></i> Video</a>
     </div>
 
-    <h2>Abstract</h2>
     <div class="section">
+      <h2>Abstract</h2>
       <p>Real-time 3D face manipulation has significant applications in virtual reality, social media and human-computer interaction. This paper introduces a novel system, which we call Mirror of Diversity (MOD), that combines Generative Adversarial Networks (GANs) for texture manipulation and 3D Morphable Models (3DMMs) for facial geometry to achieve realistic face transformations that reflect various demographic characteristics, emphasizing the beauty of diversity and the universality of human features.</p>
       <p>As participants sit in front of a computer monitor with a camera positioned above, their facial characteristics are captured in real time. Our system provides a dynamic, responsive “mirror” effect, allowing the digital 3D model to follow the participant’s motions, offering an immersive virtual reflection. Participants can further alter their digital face reconstruction with transformations reflecting different demographic characteristics—such as gender and ethnicity (e.g., a person from Africa, Asia, Europe).</p>
       <p>Another feature of our system, which we call “Collective Face”, generates an averaged face representation from multiple participants’ facial data. A comprehensive evaluation protocol is implemented to assess the realism and demographic accuracy of the transformations. Qualitative feedback is gathered through participant questionnaires, which include comparisons of MOD transformations with similar filters on platforms like Snapchat and TikTok, focusing on realism, feature preservation, and faithfulness to demographic representation. Additionally, quantitative analysis is conducted using a pretrained Convolutional Neural Network that predicts gender and ethnicity, to validate the accuracy of demographic transformations.</p>
@@ -147,11 +143,11 @@
       <figcaption>Examples of input and transformed faces using the MOD software. The transformations include face reconstruction, gender-based transformations (male and female), and ethnicity-based transformations (Asian and African). Each transformation is visualized in three formats: the input face, 3D shape with texture, and 3D shape only.</figcaption>
     </figure>
 
-    <h2>Video</h2>
-    <div class="section" style="text-align: center;">
+    <div class="section">
+      <h2>Video</h2>
+      <p>For a detailed presentation, check our full demo video:</p>
       <iframe src="https://www.youtube.com/embed/w2w6hz5Nf_I" allowfullscreen></iframe>
     </div>
-
     <h2>BibTeX Citation</h2>
     <pre>
 @misc{valergaki2025reflectionsdiversityrealtimevirtual,
