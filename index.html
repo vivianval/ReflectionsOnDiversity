@@ -89,12 +89,12 @@
       margin-top: 20px;
     }
     figure {
-      margin: 40px 0;
+      margin: 40px auto;
       text-align: center;
     }
     figure img {
-      width: 100%;
-      max-width: 900px;
+      width: 85%;
+      max-width: 700px;
       height: auto;
       border: 1px solid #ccc;
     }
@@ -103,6 +103,22 @@
       font-size: 0.95em;
       font-style: italic;
       color: #555;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    pre {
+      background-color: #fff0f5;
+      color: #000;
+      text-align: left;
+      padding: 1em;
+      margin: 40px auto;
+      max-width: 850px;
+      border-left: 4px solid #e91e63;
+      overflow-x: auto;
+      font-family: monospace;
+      white-space: pre;
+      font-size: 0.9em;
     }
   </style>
 </head>
@@ -148,8 +164,10 @@
       <p>For a detailed presentation, check our full demo video:</p>
       <iframe src="https://www.youtube.com/embed/w2w6hz5Nf_I" allowfullscreen></iframe>
     </div>
-    <h2>BibTeX Citation</h2>
-    <pre>
+
+    <div class="section">
+      <h2>BibTeX Citation</h2>
+      <pre>
 @misc{valergaki2025reflectionsdiversityrealtimevirtual,
   title={Reflections on Diversity: A Real-time Virtual Mirror for Inclusive 3D Face Transformations},
   author={Paraskevi Valergaki and Antonis Argyros and Giorgos Giannakakis and Anastasios Roussos},
@@ -159,7 +177,8 @@
   primaryClass={cs.GR},
   url={https://arxiv.org/abs/2503.20819}
 }
-    </pre>
+      </pre>
+    </div>
   </div>
 </body>
 </html>
