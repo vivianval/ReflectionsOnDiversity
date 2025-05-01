@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mirror of Diversity (MOD)</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reflections on Diversity (MOD)</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -14,26 +14,40 @@
       color: #333;
     }
     .container {
-      max-width: 900px;
+      max-width: 950px;
       margin: 0 auto;
       padding: 40px 20px;
+      text-align: center;
     }
     h1 {
       font-size: 2em;
       font-weight: bold;
       line-height: 1.4;
+      margin-bottom: 0.2em;
     }
-    h2 {
-      margin-top: 60px;
-      font-size: 1.5em;
+    .conference {
+      font-size: 1.2em;
+      color: #1a73e8;
+      margin-bottom: 1.5em;
     }
-    .buttons {
-      margin-top: 20px;
+    .authors {
+      margin-top: 10px;
+      font-size: 1em;
+      line-height: 1.8;
+    }
+    .authors a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .affiliations {
+      font-size: 0.95em;
+      margin-top: 1em;
+      line-height: 1.6;
     }
     .buttons a {
       display: inline-block;
-      margin-right: 10px;
-      margin-top: 10px;
+      margin: 10px 10px 0 0;
       padding: 12px 18px;
       background-color: #333;
       color: white;
@@ -41,37 +55,68 @@
       border-radius: 8px;
       font-weight: bold;
     }
-    .abstract, .video {
+    .section {
+      text-align: left;
       margin-top: 40px;
       line-height: 1.6;
     }
     iframe {
-      margin-top: 20px;
       width: 100%;
       height: 500px;
       border: none;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Mirror of Diversity (MOD): Real-time 3D Face Manipulation Reflecting Demographic Diversity</h1>
-    <p><strong>Project webpage:</strong> <a href="https://vivianval.github.io/ReflectionsOnDiversity/">https://vivianval.github.io/ReflectionsOnDiversity/</a></p>
-    
+    <h1>Reflections on Diversity: A Real-time Virtual Mirror for Inclusive 3D Face Transformations</h1>
+    <div class="conference">IEEE EEITE 2025</div>
+
+    <div class="authors">
+      <a href="https://www.linkedin.com/in/vivi-valergaki-631b8b293/?originalSubdomain=gr" target="_blank">Paraskevi Valergaki<sup>1,2</sup></a>,
+      <a href="https://users.ics.forth.gr/~argyros/" target="_blank">Antonis Argyros<sup>1,2</sup></a>,
+      <a href="https://users.ics.forth.gr/~ggian/" target="_blank">Giorgos Giannakakis<sup>2,3*</sup></a>,
+      <a href="https://users.ics.forth.gr/~troussos/" target="_blank">Anastasios Roussos<sup>2*</sup></a>
+    </div>
+
+    <div class="affiliations">
+      <sup>1</sup>Computer Science Department, University of Crete, Greece<br/>
+      <sup>2</sup>Institute of Computer Science (ICS), Foundation for Research & Technology – Hellas (FORTH), Greece<br/>
+      <sup>3</sup>Department of Electronic Engineering, Hellenic Mediterranean University, Chania, Greece<br/>
+      <sup>*</sup>Joint last authorship
+    </div>
+
     <div class="buttons">
       <a href="https://arxiv.org/pdf/2503.20819" target="_blank">Paper</a>
       <a href="https://arxiv.org/abs/2503.20819" target="_blank">arXiv</a>
       <a href="https://www.youtube.com/watch?v=w2w6hz5Nf_I&t=1s&ab_channel=%CE%92%CE%B9%CE%B2%CE%B7%CE%92%CE%B1%CE%BB%CE%B5%CF%81%CE%B3%CE%B1%CE%BA%CE%B7" target="_blank">Video</a>
     </div>
 
-    <div class="abstract">
+    <div class="section">
       <h2>Abstract</h2>
-      <p>Real-time 3D face manipulation has significant applications in virtual reality, social media and human-computer interaction. This paper introduces a novel system, which we call Mirror of Diversity (MOD), that combines Generative Adversarial Networks (GANs) for texture manipulation and 3D Morphable Models (3DMMs) for facial geometry to achieve realistic face transformations that reflect various demographic characteristics, emphasizing the beauty of diversity and the universality of human features.</p>
-      <p>As participants sit in front of a computer monitor with a camera positioned above, their facial characteristics are captured in real time. Our system provides a dynamic, responsive “mirror” effect, allowing the digital 3D model to follow the participant’s motions, offering an immersive virtual reflection. Participants can further alter their digital face reconstruction with transformations reflecting different demographic characteristics—such as gender and ethnicity (e.g., a person from Africa, Asia, Europe).</p>
-      <p>Another feature of our system, which we call “Collective Face”, generates an averaged face representation from multiple participants’ facial data. A comprehensive evaluation protocol is implemented to assess the realism and demographic accuracy of the transformations. Qualitative feedback is gathered through participant questionnaires, which include comparisons of MOD transformations with similar filters on platforms like Snapchat and TikTok, focusing on realism, feature preservation, and faithfulness to demographic representation. Additionally, quantitative analysis is conducted using a pretrained Convolutional Neural Network that predicts gender and ethnicity, to validate the accuracy of demographic transformations.</p>
+      <p>
+        Real-time 3D face manipulation has significant applications in virtual reality, social media and human-computer interaction.
+        This paper introduces a novel system, which we call Mirror of Diversity (MOD), that combines Generative Adversarial Networks (GANs)
+        for texture manipulation and 3D Morphable Models (3DMMs) for facial geometry to achieve realistic face transformations that reflect
+        various demographic characteristics, emphasizing the beauty of diversity and the universality of human features.
+      </p>
+      <p>
+        As participants sit in front of a computer monitor with a camera positioned above, their facial characteristics are captured in real time.
+        Our system provides a dynamic, responsive “mirror” effect, allowing the digital 3D model to follow the participant’s motions, offering an immersive virtual reflection.
+        Participants can further alter their digital face reconstruction with transformations reflecting different demographic characteristics—
+        such as gender and ethnicity (e.g., a person from Africa, Asia, Europe).
+      </p>
+      <p>
+        Another feature of our system, which we call “Collective Face”, generates an averaged face representation from multiple participants’ facial data.
+        A comprehensive evaluation protocol is implemented to assess the realism and demographic accuracy of the transformations.
+        Qualitative feedback is gathered through participant questionnaires, which include comparisons of MOD transformations with similar filters on platforms like Snapchat and TikTok,
+        focusing on realism, feature preservation, and faithfulness to demographic representation. Additionally, quantitative analysis is conducted using a pretrained Convolutional Neural Network
+        that predicts gender and ethnicity, to validate the accuracy of demographic transformations.
+      </p>
     </div>
 
-    <div class="video">
+    <div class="section">
       <h2>Video</h2>
       <p>For a detailed presentation, check our full demo video:</p>
       <iframe src="https://www.youtube.com/embed/w2w6hz5Nf_I" allowfullscreen></iframe>
