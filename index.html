@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reflections on Diversity (MOD)</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -45,19 +46,26 @@
       margin-top: 1em;
       line-height: 1.6;
     }
+    .buttons {
+      margin-top: 30px;
+    }
     .buttons a {
       display: inline-block;
       margin: 10px 10px 0 0;
-      padding: 12px 18px;
+      padding: 10px 18px;
       background-color: #333;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 30px;
       font-weight: bold;
+      font-size: 0.95em;
+    }
+    .buttons a i {
+      margin-right: 8px;
     }
     .section {
       text-align: left;
-      margin-top: 40px;
+      margin-top: 60px;
       line-height: 1.6;
     }
     iframe {
@@ -65,6 +73,22 @@
       height: 500px;
       border: none;
       margin-top: 20px;
+    }
+    figure {
+      margin: 40px 0;
+      text-align: center;
+    }
+    figure img {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    figure figcaption {
+      margin-top: 10px;
+      font-size: 0.95em;
+      font-style: italic;
+      color: #555;
     }
   </style>
 </head>
@@ -88,39 +112,13 @@
     </div>
 
     <div class="buttons">
-      <a href="https://arxiv.org/pdf/2503.20819" target="_blank">Paper</a>
-      <a href="https://arxiv.org/abs/2503.20819" target="_blank">arXiv</a>
-      <a href="https://www.youtube.com/watch?v=w2w6hz5Nf_I&t=1s&ab_channel=%CE%92%CE%B9%CE%B2%CE%B7%CE%92%CE%B1%CE%BB%CE%B5%CF%81%CE%B3%CE%B1%CE%BA%CE%B7" target="_blank">Video</a>
+      <a href="https://arxiv.org/pdf/2503.20819" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+      <a href="https://arxiv.org/abs/2503.20819" target="_blank"><i class="fas fa-external-link-alt"></i> arXiv</a>
+      <a href="https://www.youtube.com/watch?v=w2w6hz5Nf_I&t=1s" target="_blank"><i class="fab fa-youtube"></i> Video</a>
     </div>
 
     <div class="section">
       <h2>Abstract</h2>
-      <p>
-        Real-time 3D face manipulation has significant applications in virtual reality, social media and human-computer interaction.
-        This paper introduces a novel system, which we call Mirror of Diversity (MOD), that combines Generative Adversarial Networks (GANs)
-        for texture manipulation and 3D Morphable Models (3DMMs) for facial geometry to achieve realistic face transformations that reflect
-        various demographic characteristics, emphasizing the beauty of diversity and the universality of human features.
-      </p>
-      <p>
-        As participants sit in front of a computer monitor with a camera positioned above, their facial characteristics are captured in real time.
-        Our system provides a dynamic, responsive “mirror” effect, allowing the digital 3D model to follow the participant’s motions, offering an immersive virtual reflection.
-        Participants can further alter their digital face reconstruction with transformations reflecting different demographic characteristics—
-        such as gender and ethnicity (e.g., a person from Africa, Asia, Europe).
-      </p>
-      <p>
-        Another feature of our system, which we call “Collective Face”, generates an averaged face representation from multiple participants’ facial data.
-        A comprehensive evaluation protocol is implemented to assess the realism and demographic accuracy of the transformations.
-        Qualitative feedback is gathered through participant questionnaires, which include comparisons of MOD transformations with similar filters on platforms like Snapchat and TikTok,
-        focusing on realism, feature preservation, and faithfulness to demographic representation. Additionally, quantitative analysis is conducted using a pretrained Convolutional Neural Network
-        that predicts gender and ethnicity, to validate the accuracy of demographic transformations.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Video</h2>
-      <p>For a detailed presentation, check our full demo video:</p>
-      <iframe src="https://www.youtube.com/embed/w2w6hz5Nf_I" allowfullscreen></iframe>
-    </div>
-  </div>
-</body>
-</html>
+      <p>Real-time 3D face manipulation has significant applications in virtual reality, social media and human-computer interaction. This paper introduces a novel system, which we call Mirror of Diversity (MOD), that combines Generative Adversarial Networks (GANs) for texture manipulation and 3D Morphable Models (3DMMs) for facial geometry to achieve realistic face transformations that reflect various demographic characteristics, emphasizing the beauty of diversity and the universality of human features.</p>
+      <p>As participants sit in front of a computer monitor with a camera positioned above, their facial characteristics are captured in real time. Our system provides a dynamic, responsive “mirror” effect, allowing the digital 3D model to follow the participant’s motions, offering an immersive virtual reflection. Participants can further alter their digital face reconstruction with transformations reflecting different demographic characteristics—such as gender and ethnicity (e.g., a person from Africa, Asia, Europe).</p>
+      <p>Another feature of our system, which we call “Collective Face”, generates an averaged face representation from multiple participants’ facial data. A comprehensive evaluation protocol is implemented to assess the realism and demographic accuracy of the transformations. Qualitative feedback is gathered through participant questionnaires, which include comparisons of MOD transformations with similar filters on platforms like Snapchat and TikTok, focusing on realism, feature preservation, and faithfulness to demographic representation. Additionally, quantitative analysis is conducted using a pretrained Convolutional Neural Network that predicts gender and ethnicity, to validate the accuracy of
